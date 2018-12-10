@@ -1,0 +1,70 @@
+body {
+  font-family: Arial,sans-serif;
+  display: flex;
+min-height: 100vh;
+flex-direction: column;
+  flex: 1;
+}
+
+.footer {
+  background: rgb(60, 60, 60);
+  padding: 15px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  display:absolute;
+  bottom:0;
+}
+
+.incrementButton {
+  background: white;
+  border: 1px solid rgb(200,200,200);
+  outline: none;
+  padding: 5px;
+  height: 42px;
+  width: 42px;
+  display: inline-block;
+  margin-left:-5px;
+  transition-duration:190ms;
+
+}
+
+.incrementButton:hover {
+  background:rgb(240,240,240);
+}
+.incrementButton:active {
+    background:rgb(210,210,210);
+}
+
+.addButton {
+  border-left:none;
+}
+#scales {
+  display:flex;
+  justify-content:space-around;
+  height:20vh;
+    background:rgba(200,200,200,.7);
+}
+.scale {
+  width:49.5%;
+  display:inline-block;
+  margin:0;
+    text-align:center;
+}
+
+.numberInputInput {
+  border: 1px solid rgb(200,200,200);
+  outline: none;
+  padding: 5px;
+    height: 30px;
+  display: inline-block;
+  text-align:center;
+}
+
+#graph {
+  border: 2px solid black;
+  width:50%;
+  margin:3%;
+  margin-left:25%;
+  height:70%;
+}
