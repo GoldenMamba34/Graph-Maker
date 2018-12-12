@@ -16,7 +16,10 @@ $(".numberInputInput").on("change paste keyup", function() {
   var c = document.getElementById("graph");
   var ctx = c.getContext("2d");
   ctx.clearRect(0, 0, c.width, c.height);
-  drawGraph(new Point(50, 200), new Point(150, 200), new Point(150, 300), new Point(50, 300), new Point(50, 200))
+  drawGraph(new Point(0, 0), new Point(100, 0), new Point(100, 100), new Point(0, 100), new Point(0, 0))
+  drawGraph( new Point(20,20), new Point(40,20),  new Point(40,40), new Point(20,40),new Point(20,20))
+  drawGraph( new Point(50,20), new Point(70,20),  new Point(70,40), new Point(50,40),new Point(50,20))
+  drawGraph( new Point(10,60), new Point(70,60),  new Point(80,80), new Point(30,80),new Point(10,60) )
 
 });
 
@@ -43,6 +46,10 @@ function drawGraph(...points) {
   }
 
 }
-drawGraph(new Point(50, 200), new Point(150, 200), new Point(150, 300), new Point(50, 300), new Point(50, 200))
 
+drawGraph(new Point(0, 0), new Point(100, 0), new Point(100, 100), new Point(0, 100), new Point(0, 0))
+drawGraph( new Point(20,20), new Point(40,20),  new Point(40,40), new Point(20,40),new Point(20,20))
+drawGraph( new Point(50,20), new Point(70,20),  new Point(70,40), new Point(50,40),new Point(50,20))
+drawGraph( new Point(10,60), new Point(70,60),  new Point(80,80), new Point(30,80),new Point(10,60) )
+ctx.fill()
 // context.clearRect(0, 0, canvas.width, canvas.height);
